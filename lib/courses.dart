@@ -136,7 +136,8 @@ class _p3State extends State<p3> {
                 enableInfiniteScroll: true,
                 autoPlayAnimationDuration: Duration(seconds: 1),
                 viewportFraction: 0.9,
-              ),),
+              ),
+            ),
             SizedBox(height: 20,),
                Padding(
                  padding: const EdgeInsets.all(8.0),

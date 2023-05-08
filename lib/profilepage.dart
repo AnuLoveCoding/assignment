@@ -30,7 +30,6 @@ class _page5State extends State<page5> {
             child: Container(height: 200, width: 400,
               decoration: BoxDecoration(color: Colors.yellow,
                   boxShadow: [BoxShadow(color: Colors.black38,blurRadius: 3,offset: Offset(3,4,))],
-
                   borderRadius: BorderRadius.all(Radius.circular(20))
               ),
               child: Column(children: [

@@ -1688,13 +1688,7 @@ SizedBox(height: 20,),
 
 
             color: Colors.orangeAccent,
-
-
-
             borderRadius: BorderRadius.circular(5),
-
-
-
           ),child: Center(child: Text('Others',style: TextStyle(color: Colors.white),)),),
 
         

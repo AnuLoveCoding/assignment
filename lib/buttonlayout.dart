@@ -13,22 +13,24 @@ class RootPage extends StatefulWidget {
 }
 
 class _RootPageState extends State<RootPage>{
+
   int currentPage = 0;
 
   List<Widget> pages = const [
+       // page2 Redirect to another page name homepage.dart//
        page2(),
+       // page3 Redirect to aother page name course.dart //
        p3(),
-     page4(),
-    page5(),
+       // page4 Redirect to another page name treandingpage.dart //
+       page4(),
+      // page5 Redirect to another page name profilepage.dart //
+       page5(),
   ];
-
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
-
       body: pages[currentPage],
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(4.0),
@@ -50,7 +52,6 @@ class _RootPageState extends State<RootPage>{
               GButton(icon: Icons.menu_book,text: 'Courses',textSize: 15,iconColor: Colors.deepOrangeAccent,),
               GButton(icon: Icons.open_in_new,text: 'Treanding',textSize: 15,iconColor: Colors.deepOrangeAccent,),
               GButton(icon: Icons.person, text: 'My Profile',textSize: 15,iconColor: Colors.deepOrangeAccent,),
-
             ],
           ),
         ),

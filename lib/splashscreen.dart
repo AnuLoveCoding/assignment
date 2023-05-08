@@ -21,6 +21,7 @@ class _Splesh_screenState extends State<Splesh_screen> {
     Timer(Duration(seconds: 7),
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder:
+                // Redirect to another page buttonlayout.dart//
                 (context) => RootPage(),
             )
         )
@@ -30,14 +31,10 @@ class _Splesh_screenState extends State<Splesh_screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
-
         body: Container(
           height: 750,
           width: double.infinity,
           decoration: BoxDecoration(
-
               image: DecorationImage(image: NetworkImage('https://marketplace.canva.com/EAFJclBo2Bo/1/0/900w/canva-green-blue-illustration-green-hill-phone-wallpapaer-UIK163ESkKk.jpg'),fit: BoxFit.cover)
           ),
 
@@ -52,11 +49,11 @@ class _Splesh_screenState extends State<Splesh_screen> {
                         textStyle: TextStyle(
                             color: Colors.orange,
                             fontSize: 25,fontWeight: FontWeight.bold
-                        )),
+                        )
+                    ),
                   ],
                   repeatForever: true,
                   onTap: () {
-
                   },
                 ),
               ),
@@ -72,5 +69,6 @@ class _Splesh_screenState extends State<Splesh_screen> {
             ],
           ),
         )
-    );  }
+    );
+  }
 }
